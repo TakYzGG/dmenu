@@ -2,3 +2,5 @@
 
 # Parches
 - lineheaght
+- center
+- border
