@@ -4,6 +4,7 @@
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
 static int centered = 1;                    /* -c option; centers dmenu on screen */
 static int min_width = 500;                    /* minimum width when centered */
+
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[]          = { "Symbols Nerd Font Mono:size=10",
                                         "Ubuntu Mono:bold:size=10" };
@@ -15,8 +16,9 @@ static const char *colors[SchemeLast][2] = {
 	[SchemeSel] = { "#151515", "#ffffff" },
 	[SchemeOut] = { "#000000", "#00ffff" },
 };
+
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
-static unsigned int lines      = 10;
+static unsigned int lines = 40;
 
 /* -h option; minimum height of a menu line */
 static unsigned int lineheight = 16;
